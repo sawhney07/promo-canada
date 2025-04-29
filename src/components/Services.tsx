@@ -93,7 +93,7 @@ export const Services = () => {
           display: "grid",
           gridTemplateColumns: "repeat(3, 1fr)",
           gridTemplateRows: "repeat(2, auto)",
-          marginTop: "-3rem",
+          marginTop: "-5rem",
           gap: "5rem", // Increased gap from 1rem to 2rem
           justifyContent: "center",
           padding: "3rem 3rem", // Increased horizontal padding
