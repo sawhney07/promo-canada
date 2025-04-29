@@ -17,21 +17,25 @@ export const WhyChooseUs = () => {
         position: "relative",
         flexWrap: "wrap",
         alignItems: "center",
+        justifyContent: "center", // Added to center the content
         width: "100%",
         overflow: "hidden",
-        maxWidth: "100vw", // Prevent horizontal overflow
+        maxWidth: "100vw",
         boxSizing: "border-box",
+        marginTop: "2rem",
+        marginBottom: "2rem",
       }}
     >
+      {/* Left half - Image container */}
       <div
         style={{
           display: "flex",
-          flex: "1 1 auto",
-          alignItems: "center",
-          padding: "4rem 2rem", // Reduced padding to prevent overflow
-          minHeight: "400px",
+          justifyContent: "center", // Center horizontally
+          alignItems: "center", // Center vertically
+          padding: "3rem 1rem",
+          minHeight: "500px",
           width: "50%",
-          maxWidth: "768px", // Maximum width to prevent overflow
+          maxWidth: "700px",
           boxSizing: "border-box",
         }}
       >
@@ -40,37 +44,36 @@ export const WhyChooseUs = () => {
           alt="Why Choose PromoCanada"
           style={{
             objectFit: "contain",
-            alignSelf: "stretch",
-            margin: "auto",
             borderRadius: "1.5rem",
             aspectRatio: "1.3",
-            width: "650px",
-            maxWidth: "100%",
+            width: "90%", // Use percentage for responsive sizing
+            maxWidth: "600px",
           }}
         />
       </div>
+
+      {/* Right half - Text container */}
       <div
         style={{
           display: "flex",
           flexDirection: "column",
-          flex: "1 1 auto",
           justifyContent: "center",
-          alignItems: "flex-start",
-          alignSelf: "stretch",
-          padding: "4rem 2rem", // Reduced padding to prevent overflow
+          alignItems: "flex-start", // Left align content
+          marginTop: "6rem",
+          padding: "5rem 2rem",
           fontSize: "1.25rem",
           fontWeight: 500,
           color: "white",
           minHeight: "400px",
           width: "50%",
-          maxWidth: "768px",
+          maxWidth: "700px",
           boxSizing: "border-box",
         }}
       >
         <h2
           style={{
             fontSize: "2.25rem",
-            textAlign: "center",
+            textAlign: "left", // Left align the heading
             margin: 0,
             width: "100%",
           }}
@@ -80,10 +83,11 @@ export const WhyChooseUs = () => {
         <p
           style={{
             alignSelf: "stretch",
-            marginTop: "3rem",
+            marginTop: "2rem",
             color: "#d4d4d4",
             lineHeight: 1.6,
             fontWeight: 400,
+            textAlign: "left", // Explicitly left align text
           }}
         >
           We specialize in providing high-quality promotional products to
@@ -93,11 +97,9 @@ export const WhyChooseUs = () => {
         </p>
         <div
           style={{
-            overflow: "hidden",
-            paddingRight: "3.5rem",
-            marginTop: "3rem",
-            maxWidth: "100%",
-            width: "745px",
+            marginTop: "1rem",
+            width: "100%", // Full width of container
+            maxWidth: "100%", // Don't exceed container width
           }}
         >
           {benefits.map((benefit, index) => (
@@ -106,9 +108,9 @@ export const WhyChooseUs = () => {
               style={{
                 display: "flex",
                 flexWrap: "wrap",
-                gap: "1rem",
+                gap: "0.5rem",
                 alignItems: "center",
-                padding: "0.5rem 0",
+                padding: "0.1rem 0",
                 minHeight: "50px",
               }}
             >

@@ -94,12 +94,14 @@ export const ProductCategories = () => {
         style={{
           display: "flex",
           flexWrap: "wrap",
-          gap: "3rem",
+          gap: "1.5rem",
           justifyContent: "center",
           alignItems: "center",
-          padding: "4rem 0.625rem",
+          padding: "3rem 0.45rem",
           width: "100%",
           color: "white",
+          maxWidth: "1300px",
+          margin: "0 auto",
         }}
       >
         {categories.map((category, index) => (

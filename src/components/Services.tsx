@@ -90,17 +90,16 @@ export const Services = () => {
       </div>
       <div
         style={{
-          display: "flex",
-          flexWrap: "wrap",
-          gap: "3rem",
+          display: "grid",
+          gridTemplateColumns: "repeat(3, 1fr)",
+          gridTemplateRows: "repeat(2, auto)",
+          marginTop: "-3rem",
+          gap: "5rem", // Increased gap from 1rem to 2rem
           justifyContent: "center",
-          alignItems: "center",
-          padding: "3.5rem 0.625rem",
+          padding: "3rem 3rem", // Increased horizontal padding
           width: "100%",
-          fontWeight: 500,
-          minHeight: "765px",
-          maxWidth: "1400px",
-          margin: "0 auto",
+          maxWidth: "1200px", // Slightly increased max-width to accommodate gaps
+          margin: "2rem auto",
         }}
       >
         {services.map((service, index) => (

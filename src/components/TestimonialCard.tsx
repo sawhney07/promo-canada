@@ -19,7 +19,7 @@ export const TestimonialCard: React.FC<TestimonialCardProps> = ({
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
-        padding: "2.75rem 1.25rem",
+        padding: "1rem 1.25rem",
         borderRadius: "1rem",
         border: "1px solid #525252",
         boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
@@ -119,7 +119,6 @@ export const TestimonialCard: React.FC<TestimonialCardProps> = ({
           }}
         >
           {name}
-          <br />
           <br />
           <span style={{ fontWeight: 300, fontSize: "0.75rem" }}>{title}</span>
         </div>

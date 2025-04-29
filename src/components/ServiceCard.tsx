@@ -18,16 +18,15 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "flex-start",
-        alignSelf: "stretch",
-        padding: "4rem 2.5rem",
-        margin: "auto",
+        padding: "2rem 2rem", // Further reduced padding
+        margin: "0", // Keep margin at 0
         borderRadius: "1rem",
         border: "1px solid #525252",
         boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
         backgroundColor: "rgba(0, 0, 0, 0.3)",
-        minHeight: "300px",
-        width: "400px",
-        minWidth: "300px",
+        minHeight: "240px", // Further reduced height
+        width: "100%", // Take full width of grid cell
+        height: "100%", // Take full height of grid cell
         overflow: "hidden",
         transition: "transform 0.3s ease, box-shadow 0.3s ease",
       }}

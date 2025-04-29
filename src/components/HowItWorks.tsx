@@ -13,16 +13,16 @@ const StepCard: React.FC<StepCardProps> = ({ number, title, description }) => (
       flexDirection: "column",
       justifyContent: "center",
       alignItems: "flex-start",
-      alignSelf: "stretch",
-      padding: "3.5rem 2.5rem",
-      margin: "auto",
+      padding: "1rem 2.5rem", // Reduced padding
+      margin: "0",
       borderRadius: "1rem",
       border: "1px solid #525252",
       boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
       backgroundColor: "rgba(0, 0, 0, 0.3)",
-      minHeight: "290px",
-      width: "300px",
-      minWidth: "300px",
+      minHeight: "270px", // Slightly reduced height
+      width: "180px", // Reduced width to fit all cards in one row
+      minWidth: "180px", // Reduced minimum width
+      maxWidth: "200px", // Added maximum width
       overflow: "hidden",
       transition: "transform 0.3s ease, box-shadow 0.3s ease",
     }}
@@ -114,6 +114,7 @@ export const HowItWorks = () => {
         alignItems: "center",
         width: "100%",
         overflow: "hidden",
+        marginBottom: "4rem",
       }}
     >
       <div
@@ -157,15 +158,17 @@ export const HowItWorks = () => {
         style={{
           display: "flex",
           position: "relative",
-          flexWrap: "wrap",
-          gap: "2.5rem",
+          flexWrap: "nowrap", // Changed from wrap to nowrap to force single row
+          gap: "2rem", // Reduced gap between cards
           justifyContent: "center",
           alignItems: "center",
-          padding: "4rem 5rem",
+          padding: "4rem 1rem", // Reduced horizontal padding
           width: "100%",
+          overflowX: "auto", // Added horizontal scroll for small screens
           fontWeight: 500,
-          minHeight: "425px",
+          minHeight: "350px", // Reduced height
           boxSizing: "border-box",
+          marginTop: "-3rem",
         }}
       >
         {steps.map((step, index) => (
